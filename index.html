@@ -2,9 +2,69 @@
 <html lang="en">
 <head>
     <title>Web de Prueba</title>
+    <style>
+        table, th, td  { 
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-    <form action="formulario" method="posta">  
+
+    <table style="width: 500px;">
+
+       <thead>
+        <tr> 
+            <th>Producto</th>
+            <th>Precio</th>
+        </tr>
+       </thead>
+        <tbody>
+            <tr>
+                <td>Hola beat</td>
+                <td>Es gratis</td>
+            </tr>
+    
+            <tr>
+                <td>Playstation</td>
+                <td>500.99$</td>
+            </tr>
+    
+            <tr>
+                <td>Xbox one s</td>
+                <td>199.99$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 700,98$</td>
+        
+        </tfoot>
+
+    </table>
+    <!-- ul es lista no ordenada -->
+    <ul>
+        <li>Nuestra lista no ordenada  </li>
+        <li>Elemento 1 </li>
+        <li>Elemento 2 </li>
+        <li>Elemento 3 </li>
+    </ul>
+    <!-- ol es lista ordenada -->
+    <ol>
+        <li value="50">Nuestra Lista ordenada </li>
+        <li>Elemento 1 </li>
+        <li>Elemento 2 </li>
+        <li>Elemento 3 </li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">Sub elemento 1 </li>
+                <li style="list-style-type: lower-alpha;">Sub elemento 2 </li>
+                <li style="list-style-type: lower-alpha;">Sub elemento 3 </li>
+            </ol>
+        </li>
+    </ol>
+
+
+    <form action="formulario" method="post">  
         <label for="nombre" >Nombre</label> 
         <input type="text" id="nombre" name="nombre" placeholder="Chanchito feliz..." /> 
         <br> 
@@ -14,7 +74,9 @@
         <label for="comentario">Comentario</label> 
          <textarea cols="50" rows="10" id="comentario" placeholder="ingrese comentario" name="comentario"></textarea>
          <br> 
-         <input type="submit" />  
+         <button type="button"><img src="img/Gamer.jpg"/< Enviar</button> 
+         <button type="reset">tipo reset</button> 
+         <button type="button">Submit</button> 
      </form>
     
     <h1>Mi primer heading</h1>
